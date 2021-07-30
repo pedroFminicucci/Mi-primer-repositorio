@@ -55,6 +55,7 @@ nav {
 .header__menu li:hover {
     background-color: rgba(100, 100, 100, 0.75);
     border-bottom: rgb(255, 170, 120) solid;
+    transition: 1s background-color;
 }
 
 a {
@@ -70,19 +71,23 @@ a {
     z-index: 99;
     margin-top: 9%;
     width: 100%;
+    
 }
 .dropdown ul li {
     list-style: none;
+    transition: 1s background-color;
+    transition-delay: 1s;
 }
 
 .dropdown {
     position: relative;
+    transition: 1s background-color;
+
 }
 
 .dropdown:hover ul {
     display: block;
 }
-
 /* LOGO */
 .main_logo {
     display: flex;
