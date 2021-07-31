@@ -2,10 +2,12 @@
     margin: 0;
     padding: 0;
 }
+
 body {
     padding-top: 100px;
 }
-.logo{
+
+.logo {
     img {
         position: absolute;
         right: 0px;
@@ -13,7 +15,7 @@ body {
         margin-right: -50px;
         margin-top: -10px;
     }
-} 
+}
 
 /* FONDO */
 #fondo {
@@ -30,6 +32,7 @@ body {
     background-color: #3D3D3D;
     font-family: 'Cinzel', cursive;
 }
+
 /* HEADER */
 nav {
     position: fixed;
@@ -50,16 +53,20 @@ nav {
 
 .header__menu {
     li {
-       flex: 10px;
-       text-align: center;
-       padding-top: 25px;
+        flex: 10px;
+        text-align: center;
+        padding-top: 25px;
     }
 }
 
-.header__menu li:hover {
-    background-color: rgba(100, 100, 100, 0.75);
-    border-bottom: rgb(255, 170, 120) solid;
-    transition: 1s background-color;
+.header__menu {
+    li {
+        &:hover {
+            background-color: rgba(100, 100, 100, 0.75);
+            border-bottom: rgb(255, 170, 120) solid;
+            transition: 1s background-color;
+        }
+    }
 }
 
 a {
@@ -68,19 +75,27 @@ a {
     color: seashell;
 }
 
-.dropdown ul {
-    position: absolute;
-    display: none;
-    background: rgb(26, 26, 26);
-    z-index: 99;
-    margin-top: 9%;
-    width: 100%;
-    
+.dropdown {
+    ul {
+        position: absolute;
+        display: none;
+        background: rgb(26, 26, 26);
+        z-index: 99;
+        margin-top: 9%;
+        width: 100%;
+    }
+
 }
-.dropdown ul li {
-    list-style: none;
-    transition: 1s background-color;
-    transition-delay: 1s;
+
+.dropdown {
+    ul {
+        li {
+            list-style: none;
+            transition: 1s background-color;
+            transition-delay: 1s;
+        }
+
+    }
 }
 
 .dropdown {
@@ -89,9 +104,14 @@ a {
 
 }
 
-.dropdown:hover ul {
-    display: block;
+.dropdown {
+    &:hover {
+        ul {
+        display: block;
+        }
+    }
 }
+
 /* LOGO */
 .main_logo {
     display: flex;
@@ -108,11 +128,14 @@ footer {
     width: 100%;
     height: 60px;
 }
-footer img {
-    width: 40px;
-    position: relative;
-    left: 50%;
-    top: 12px;
+
+footer {
+    img {
+        width: 40px;
+        position: relative;
+        left: 50%;
+        top: 12px;
+    }
 }
 
 @media screen and (max-width: 786px) {
