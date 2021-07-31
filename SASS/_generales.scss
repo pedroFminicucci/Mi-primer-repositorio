@@ -5,13 +5,15 @@
 body {
     padding-top: 100px;
 }
-.logo img {
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    margin-right: -50px;
-    margin-top: -10px;
-}
+.logo{
+    img {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        margin-right: -50px;
+        margin-top: -10px;
+    }
+} 
 
 /* FONDO */
 #fondo {
@@ -46,10 +48,12 @@ nav {
     height: 100%;
 }
 
-.header__menu li {
-    flex: 10px;
-    text-align: center;
-    padding-top: 25px;
+.header__menu {
+    li {
+       flex: 10px;
+       text-align: center;
+       padding-top: 25px;
+    }
 }
 
 .header__menu li:hover {
